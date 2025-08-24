@@ -48,17 +48,6 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "android.hardware.health-service.gs201",
-    defaults: ["android.hardware.health-service.gs201-defaults"],
-    proprietary: true,
-    init_rc: ["android.hardware.health-service.gs201.rc"],
-    overrides: ["charger"],
-    shared_libs: [
-        "libpixelhealth",
-    ],
-}
-
-cc_binary {
     name: "android.hardware.health-service.gs201_recovery",
     defaults: ["android.hardware.health-service.gs201-defaults"],
     recovery: true,
